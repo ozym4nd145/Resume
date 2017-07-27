@@ -170,32 +170,27 @@ Year & Degree & Institute & CGPA/Percentage \\
 
 \item[]
 \headerrow {\textbf{Multicycle ARM Processor}}{Prof. Anshul Kumar, Mar-April 2017}
-\begin{itemize}
-\setlength\itemsep{0.0em}
-    \item Designed Multicycle ARM processor in VHDL that ran on FPGA board.
-    \item Used AHB Lite bus to connect Memory and Input Output interfaces.
-    \item Implemented 7 segment interface for processor to display cycle counts and features like interrupt, reset.
+\begin{itemize} \item[]
+Developed a Multicycle ARM procecssor in VHDL that ran on FPGA board. Modelled memory as slave and used AHB Lite bus for connection. Implemented UART interface for memory and extended the processor with 7 segment display and interrupt controller.
 \end{itemize}
 
 \item[]
 \headerrow {\textbf{Prolog Interpreter}}{Prof. Sanjeeva Prasad, Mar-April 2017}
-\begin{itemize}
-\setlength\itemsep{0.0em}
-    \item Developed a Prolog Interpreter in OCaml with full command line interpreter.
-    \item Token generation and Parsing was done using OCaml-Lex and OCaml-Yacc respectively.
-    \item Rule unification and backtracking were done in order to implement the relational backbone of the interpreter.
+\begin{itemize} \item[] 
+Designed a prolog interpreter written in OCaml. It used OCaml-lex for token generation and OCaml-yacc for parsing. Backtracking and rule unification were used to implement the relational backbone of the interpreter.
 \end{itemize}
 
 \item[]
 \headerrow{ \textbf{Krivine and SECD Machine}} {Prof. Sanjeeva Prasad, April - May 2017}
-\begin{itemize}
-\setlength\itemsep{0.0em}
-\item Developed Krivine and SECD machine in OCaml.
-\item Invented OCaml like programming language for these machines.
-\item Used OCaml-lex and Ocaml-yacc for token generation and parsing.
-\item Programmed various features like recursion for these machines.
+\begin{itemize} \item[] 
+Implemented a compiler with krivine and secd machine. A Lexical Scanner converted program to tokens followed by a Recursive Descent Parser for converting the token list to an Abstract Syntax Tree (AST). The AST was type checked and a low level code was generated which was executed by the Krivine and SECD machine. Machines also supported features like scoping,function passing,recursion.
 \end{itemize}
 
+\item[]
+\headerrow { \textbf{AC Circuit Solver}} {Prof. Kolin Paul, Feb - Mar 2017}
+\begin{itemize} \item[]
+Designed and developed a AC Circuit solver in C which generates an SVG of input circuit and gives steady state solution of circuit. It used Lex and Yacc to tokenize and parse netlist and Gaussian Elimination to solve node equations of circuit. 
+\end{itemize}
 
 % \item[]
 %   \headerrow {\textbf{CampusBot}} {Jan 2017 - Feb 2017}
