@@ -16,7 +16,7 @@
 \usepackage{hyperref}
 \hypersetup{
   colorlinks=true,
-  urlcolor=blue,      % color of file links
+  urlcolor=black,      % color of file links
   }
 %\usepackage[scaled]{helvet}
 %\renewcommand*\familydefault{\sfdefault}
@@ -82,9 +82,11 @@
  {\Large \textsc{Suyash Agrawal} }\\ 
 \begin{tabular}{ l p{8cm} r }
     & &   \\
-  Computer Science and Engineering & & suyash1212@gmail.com \\
-  Indian Institute of Technology, Delhi & & cs1150262@cse.iitd.ac.in \\
-  & & github.com/ozym4nd145 \\ & & linkedin.com/in/suyash1012\\
+  \href{http://www.cse.iitd.ernet.in/}{Computer Science and Engineering} & & suyash1212@gmail.com \\
+  Indian Institute of Technology, Delhi
+%    & & cs1150262@cse.iitd.ac.in \\
+  & & \href{https://github.com/ozym4nd145/}{github.com/ozym4nd145} \\
+  & & \href{https://www.linkedin.com/in/suyash1012}{linkedin.com/in/suyash1012}\\
 \end{tabular}
 \end{center}
 
@@ -112,7 +114,7 @@ Year & Degree & Institute & CGPA/Percentage \\
 \begin{itemize}
     \setlength\itemsep{0.0em}
     \item Secured \textbf{All India Rank 69} in Joint Entrance Exam Advanced - 2015 among 150 Thousand candidates.
-    \item Won \textbf{IITD Semester Merit Award} in every semester given to \textbf{top 7\%} of all the students.
+    \item \textbf{Institute Rank 3}. Consistently maintaining institute rank in top 3 among 850 students during academic years 2015-2017. IIT Delhi granted scholarship for the same.
     \item Selected for \textbf{ACM-ICPC 2017} Regional Round with a rank of 155 all over India.
     \item Runner up in \textbf{Microsoft's Code.Fun.Do} campus wide Hackathon in 2016 and 2017.
     \item Ranked in \textbf{Top 0.01\%} among 1.4 million candidates appearing in Joint Entrance Examination(JEE Mains-2015).
@@ -183,23 +185,20 @@ Designed a prolog interpreter written in OCaml. It used OCaml-lex for token gene
 \item[]
 \headerrow{ \textbf{Krivine and SECD Machine}} {Prof. Sanjeeva Prasad, April - May 2017}
 \begin{itemize} \item[] 
-Implemented a compiler with krivine and secd machine. A Lexical Scanner converted program to tokens followed by a Recursive Descent Parser for converting the token list to an Abstract Syntax Tree (AST). The AST was type checked and a low level code was generated which was executed by the Krivine and SECD machine. Machines also supported features like scoping,function passing,recursion.
+Implemented a compiler with krivine and secd machine. A Lexical Scanner converted program to tokens followed by a Recursive Descent Parser for converting the token list to an Abstract Syntax Tree (AST). The AST was type checked and a low level code was generated, which was executed by the Krivine and SECD machine. Machines also supported features like scoping,function passing,recursion.
 \end{itemize}
 
 \item[]
 \headerrow { \textbf{AC Circuit Solver}} {Prof. Kolin Paul, Feb - Mar 2017}
 \begin{itemize} \item[]
-Designed and developed a AC Circuit solver in C which generates an SVG of input circuit and gives steady state solution of circuit. It used Lex and Yacc to tokenize and parse netlist and Gaussian Elimination to solve node equations of circuit. 
+Designed and developed a AC Circuit solver in C which generates an SVG of input circuit and gives steady state solution of circuit. It used Lex and Yacc to parse netlist and Gaussian Elimination to solve node equations of circuit. 
 \end{itemize}
 
-% \item[]
-%   \headerrow {\textbf{CampusBot}} {Jan 2017 - Feb 2017}
-%   \begin{itemize}
-%     \setlength\itemsep{0.0em}
-%     \item Developed a chatbot as a one stop solution for all campus requirements.
-%     \item Built using NodeJS using Microsoft BotBuilder Framework, it uses natural language processing to parse natural language commands and uses various other APIs like Twilio , CleverBot, Facebook Graph API etc. to provide various functionalities like SMS reminders, chatting etc.
-%     \item It was runner up in Microsoft Code.Fun.Do Hackathon in 2017.
-%   \end{itemize}
+\item[]
+\headerrow {\textbf{Flashsubs}} {Independent Project, Mar - April 2016}
+\begin{itemize} \item[]
+Created a software for automatic management of media library (Movies/ TV Series) which intelligently fetched of subtitles for files and auto renamed obfuscated media files. It used file hash to uniquely identify media from opensubtitles database and used filename as identifier as a last resort. It also performed automatic downloading of various metadata like IMDb rating, plot, actors list etc.
+\end{itemize}
 
 \end{list}
 %\end{itemize}
@@ -220,7 +219,7 @@ Computer Vision*, Algorithm Design*, AI*, Networks*, Logic for CS*, Cryptography
 Signals \& Systems, Probability \& Stochastic Processes, Calculus, Linear Algebra, Intro to Electrical Engineering.\\
 
 \item \textbf{Online:} \\
-Deep Learning (Fast.ai), Intro to Machine Learning (Stanford, Coursera), Intro to Computer Science (CS50, Harvard).
+Deep Learning (\href{http://www.fast.ai/}{Fast.ai}), Intro to Machine Learning (Stanford, Coursera), Intro to Computer Science (CS50, Harvard).
 
 
 \end{itemize}
@@ -233,10 +232,10 @@ Deep Learning (Fast.ai), Intro to Machine Learning (Stanford, Coursera), Intro t
 
 \begin{longversion}
 \section{Technical Skills}\begin{itemize}
-\item \textbf{Programming Languages:}  C, \CPP, Python, Java, JavaScript, NodeJS, VHDL, C\#, Matlab.
+\item \textbf{Programming Languages:}  C, \CPP, Python, Java, JavaScript, NodeJS, OCaml, VHDL, C\#, Matlab.
 \item \textbf{Frameworks:} ExpressJS, Django, Web2Py, Bootstrap, JQuery, MongoDB, DynamoDB
 
-\item \textbf{Programming Environments:} Git, Android Studio, LaTeX, Visual Studio, Xilinx ISE Design Suite
+% \item \textbf{Programming Environments:} Git, Android Studio, LaTeX, Visual Studio, Xilinx ISE Design Suite
 
 \end{itemize}
 
@@ -249,10 +248,11 @@ Deep Learning (Fast.ai), Intro to Machine Learning (Stanford, Coursera), Intro t
 \begin{itemize}
     \setlength\itemsep{0em}
     \item Co-founded Development Club in IIT Delhi to spread software development culture in college.
+    \item Coordinator at Coding Club, responsible for organising all competitive coding related events at IIT Delhi.
     \item Technical Activity Head at \href{http://rdv-iitd.com/}{Rendezvous 2017}, responsible for all the technical backend of the cultural festival.
-    \item Executive at ACES-ACM Student Chapter and Coding Club, involved in organising various events and workshops for Computer Science department at IIT Delhi.
-    \item Developed a chatbot named CampusBot during Code.Fun.Do to fulfill the basic needs of college students.
-    \item Won MockStock , an online trading competition , in \href{http://tryst-iitd.com/iitd}{Tryst 2017}.
+    \item Appointed as 3rd Year Representative of Kumaon Hostel in IIT Delhi.
+    \item Developed a chatbot named CampusBot during Microsoft Code.Fun.Do to fulfill the basic needs of college students.
+    % \item Won MockStock , an online trading competition , in \href{http://tryst-iitd.com/iitd}{Tryst 2017}.
      
 \end{itemize}
 
