@@ -1,0 +1,266 @@
+% % (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% % (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
+% % (c) 2008 Nathaniel Johnston <nathaniel@nathanieljohnston.com> http://www.nathanieljohnston.com
+% %
+% % (c) 2012 Scott Clark <sc932@cornell.edu> cam.cornell.edu/~sc932
+% %
+% %This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 2.5 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/2.5/ or send a letter to Creative Commons, 543 Howard Street, 5th Floor, San Francisco, California, 94105, USA.
+
+
+
+
+
+\documentclass{article}
+
+\usepackage{verbatim}
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  urlcolor=blue,      % color of file links
+  }
+%\usepackage[scaled]{helvet}
+%\renewcommand*\familydefault{\sfdefault}
+
+\newenvironment{longversion}{}{} % use this to show longversion
+%\newenvironment{longversion}{\comment}{\endcomment} % use this to hide  longversion
+\newenvironment{shortversion}{}{} % use this to show shortversion
+%\newenvironment{shortversion}{\comment}{\endcomment} % use this to hide shortversion
+
+\usepackage{changepage}
+\usepackage{tabularx}
+\usepackage{setspace}
+\usepackage{url}
+\usepackage{sectsty}
+\usepackage[letterpaper,margin=0.55in]{geometry}
+\pagestyle{empty}
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{-0.5#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+	#1 &
+	#2 \\
+\end{tabular*}}
+
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+%edit the section font and style
+\sectionfont{\normalfont\sectionrule{0pt}{0pt}{-4pt}{1pt}}
+
+%make all sections cap and first letter capital
+\newcommand{\tmpsection}[1]{}
+\let\tmpsection=\section
+\renewcommand{\section}[1]{\tmpsection*{\textsc{#1}}}
+
+%set the line spacing
+\setstretch{1.10}
+
+
+\begin{document}
+%TITLE
+%todo change the email address and website address to your new address.
+
+\begin{center}
+ {\Large \textsc{Suyash Agrawal} }\\ 
+\begin{tabular}{ l p{8cm} r }
+    & &   \\
+  Computer Science and Engineering & & suyash1212@gmail.com \\
+  Indian Institute of Technology, Delhi & & cs1150262@cse.iitd.ac.in \\
+  & & github.com/ozym4nd145 \\ & & linkedin.com/in/suyash1012\\
+\end{tabular}
+\end{center}
+
+
+\section{Academic Details}
+
+\begin{center}
+\begin{tabular}{ |c | c | c | c |}
+\hline
+Year & Degree & Institute & CGPA/Percentage \\ 
+\hline
+2015-2019 & B.Tech in Computer Science & Indian Institute of Technology & 9.87 \\ 
+(Current) & and Engineering & Delhi & \textbf{Institute Rank 3}\\
+\hline
+
+
+2015 & Class XII, CBSE & Vishva Bharti Public School & 96.4\% \\ 
+
+\hline
+2013 & Class X, CBSE & Christ Jyoti Senior Secondary School & 10.00 \\  \hline
+\end{tabular}
+\end{center}
+
+\section{Scholastic Achievements}
+\begin{itemize}
+    \setlength\itemsep{0.0em}
+    \item Secured \textbf{All India Rank 69} in Joint Entrance Exam Advanced - 2015 among 150 Thousand candidates.
+    \item Won \textbf{IITD Semester Merit Award} in every semester given to \textbf{top 7\%} of all the students.
+    \item Selected for \textbf{ACM-ICPC 2017} Regional Round with a rank of 155 all over India.
+    \item Runner up in \textbf{Microsoft's Code.Fun.Do} campus wide Hackathon in 2016 and 2017.
+    \item Ranked in \textbf{Top 0.01\%} among 1.4 million candidates appearing in Joint Entrance Examination(JEE Mains-2015).
+    \item Selected as \textbf{KVPY} Scholar in `Kishore Vaigyanik Protsahan Yojana' by Indian Institute of Science given to top 1\%.
+    \item Became a National Talent Search Examination (\textbf{NTSE}) scholar for being in top 1000 at National level in 2013.
+\end{itemize}
+
+\section{Major Projects}
+% \begin{spacing}{1}
+\begin{list} {\labelitemi}{\leftmargin=0em}
+\setlength{\leftmargin}{0pt}
+
+    \item[]
+    \headerrow {\textbf{Automated Video Description}}{Prof. Subhashis Banerjee, May-July 2017}
+    \begin{itemize}
+    \setlength\itemsep{0.0em}
+        \item Built software for generating novel description of short video clips.
+        \item Used transfer learning in encoder by employing state of art CNN (Inception V4) to encode individual video frames.
+        \item Designed encoder decoder network architecture consisting of Multilayered LSTMs to achieve this translation.
+        \item Experimented with Data Augmentation, Audio Features, Attention models, Loss metrics to improve performance.
+        \item Explored its applications in areas like video surveillance and helping visually impaired.
+    \end{itemize}
+
+    \item[]
+    \headerrow {\textbf{Automated Image Captioning}}{Prof. Subhashis Banerjee, Jan-April 2017}
+    \begin{itemize}
+    \setlength\itemsep{0.0em}
+        \item Developed a software to automatically generate captions for images.
+        \item Used a encoder decoder network similar to machine translation for generating captions.
+        \item Used Inception V4 network to extract features from images using transfer learning
+        \item Used Multilayered LSTM network to decode image embeddings into natural language sentence.
+        \item Achieved baseline performance of paper Show and Tell by Vinyals et al.
+    \end{itemize}
+
+    \item[]
+    \headerrow {\textbf{Pipelined MIPS Simulator with debugger and cache simulator}}{Prof. Kolin Paul, Mar-April 2017}
+    \begin{itemize}
+    \setlength\itemsep{0.0em}
+        \item Developed a pipelined MIPS simulator supporting animation of instruction execution in multiple stages in C.
+        \item Simulated all stages in parallel using threads (pthreads).
+        \item Designed a trace based cache simulator and debugger for the processor with various configuration options.
+        \item Used SVG to show current instruction in each stage and Javascript, CSS for styling.
+    \end{itemize}
+
+\end{list}
+% \end{spacing}
+
+
+\begin{longversion}
+\section{Other Projects}
+\begin{list} {\labelitemi}{\leftmargin=0em}
+\setlength{\leftmargin}{0pt}
+% \setlength\itemsep{5em}
+%\begin{itemize}
+
+\item[]
+\headerrow {\textbf{Multicycle ARM Processor}}{Prof. Anshul Kumar, Mar-April 2017}
+\begin{itemize}
+\setlength\itemsep{0.0em}
+    \item Designed Multicycle ARM processor in VHDL that ran on FPGA board.
+    \item Used AHB Lite bus to connect Memory and Input Output interfaces.
+    \item Implemented 7 segment interface for processor to display cycle counts and features like interrupt, reset.
+\end{itemize}
+
+\item[]
+\headerrow {\textbf{Prolog Interpreter}}{Prof. Sanjeeva Prasad, Mar-April 2017}
+\begin{itemize}
+\setlength\itemsep{0.0em}
+    \item Developed a Prolog Interpreter in OCaml with full command line interpreter.
+    \item Token generation and Parsing was done using OCaml-Lex and OCaml-Yacc respectively.
+    \item Rule unification and backtracking were done in order to implement the relational backbone of the interpreter.
+\end{itemize}
+
+\item[]
+\headerrow{ \textbf{Krivine and SECD Machine}} {Prof. Sanjeeva Prasad, April - May 2017}
+\begin{itemize}
+\setlength\itemsep{0.0em}
+\item Developed Krivine and SECD machine in OCaml.
+\item Invented OCaml like programming language for these machines.
+\item Used OCaml-lex and Ocaml-yacc for token generation and parsing.
+\item Programmed various features like recursion for these machines.
+\end{itemize}
+
+
+% \item[]
+%   \headerrow {\textbf{CampusBot}} {Jan 2017 - Feb 2017}
+%   \begin{itemize}
+%     \setlength\itemsep{0.0em}
+%     \item Developed a chatbot as a one stop solution for all campus requirements.
+%     \item Built using NodeJS using Microsoft BotBuilder Framework, it uses natural language processing to parse natural language commands and uses various other APIs like Twilio , CleverBot, Facebook Graph API etc. to provide various functionalities like SMS reminders, chatting etc.
+%     \item It was runner up in Microsoft Code.Fun.Do Hackathon in 2017.
+%   \end{itemize}
+
+\end{list}
+%\end{itemize}
+
+% \pagebreak
+
+% \textit{*All projects are available in my github profile}
+\end{longversion}
+
+\begin{longversion}
+\section{Relevant Courses}
+\begin{itemize}
+\setlength\itemsep{-1em}
+\item \textbf{Computer Science:} \\ 
+Computer Vision*, Algorithm Design*, AI*, Networks*, Logic for CS*, Cryptography*, Programming Languages, Computer Architecture, Design Practices, Data Structures \& Algorithms, Discrete Mathematics, Digital Logic\\
+
+\item \textbf{Mathematics and Electrical Engineering:} \\
+Signals \& Systems, Probability \& Stochastic Processes, Calculus, Linear Algebra, Intro to Electrical Engineering.\\
+
+\item \textbf{Online:} \\
+Deep Learning (Fast.ai), Intro to Machine Learning (Stanford, Coursera), Intro to Computer Science (CS50, Harvard).
+
+
+\end{itemize}
+
+
+
+\textit{*Courses currently pursuing}
+\end{longversion}
+
+
+\begin{longversion}
+\section{Technical Skills}\begin{itemize}
+\item \textbf{Programming Languages:}  C, \CPP, Python, Java, JavaScript, NodeJS, VHDL, C\#, Matlab.
+\item \textbf{Frameworks:} ExpressJS, Django, Web2Py, Bootstrap, JQuery, MongoDB, DynamoDB
+
+\item \textbf{Programming Environments:} Git, Android Studio, LaTeX, Visual Studio, Xilinx ISE Design Suite
+
+\end{itemize}
+
+\end{longversion}
+
+\section{Extra Curricular Activities}
+%\setlength{\leftmargin}{0pt}
+
+
+\begin{itemize}
+    \setlength\itemsep{0em}
+    \item Co-founded Development Club in IIT Delhi to spread software development culture in college.
+    \item Technical Activity Head at \href{http://rdv-iitd.com/}{Rendezvous 2017}, responsible for all the technical backend of the cultural festival.
+    \item Executive at ACES-ACM Student Chapter and Coding Club, involved in organising various events and workshops for Computer Science department at IIT Delhi.
+    \item Developed a chatbot named CampusBot during Code.Fun.Do to fulfill the basic needs of college students.
+    \item Won MockStock , an online trading competition , in \href{http://tryst-iitd.com/iitd}{Tryst 2017}.
+     
+\end{itemize}
+
+
+
+\end{document}
