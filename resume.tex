@@ -34,6 +34,12 @@
 \usepackage[letterpaper,margin=0.55in]{geometry}
 \pagestyle{empty}
 
+\newenvironment{absolutelynopagebreak}
+  {\par\nobreak\vfil\penalty0\vfilneg
+   \vtop\bgroup}
+  {\par\xdef\tpd{\the\prevdepth}\egroup
+   \prevdepth=\tpd}
+
 % indentsection style, used for sections that aren't already in lists
 % that need indentation to the level of all text in the document
 \newenvironment{indentsection}[1]%
@@ -84,7 +90,7 @@
     & &   \\
   \href{http://www.cse.iitd.ernet.in/}{Computer Science and Engineering} & & suyash1212@gmail.com \\
   Indian Institute of Technology, Delhi
-%    & & cs1150262@cse.iitd.ac.in \\
+%    & & +91-9717060183 \\
   & & \href{https://github.com/ozym4nd145/}{github.com/ozym4nd145} \\
   & & \href{https://www.linkedin.com/in/suyash1012}{linkedin.com/in/suyash1012}\\
 \end{tabular}
@@ -117,7 +123,7 @@ Year & Degree & Institute & CGPA/Percentage \\
     \item \textbf{Institute Rank 3}. Consistently maintaining institute rank in top 3 among 850 students during academic years 2015-2017. IIT Delhi granted scholarship for the same.
     \item Selected for \textbf{ACM-ICPC 2017} Regional Round with a rank of 155 all over India.
     \item Runner up in \textbf{Microsoft's Code.Fun.Do} campus wide Hackathon in 2016 and 2017.
-    \item Ranked in \textbf{Top 0.01\%} among 1.4 million candidates appearing in Joint Entrance Examination(JEE Mains-2015).
+    % \item Ranked in \textbf{Top 0.01\%} among 1.4 million candidates appearing in Joint Entrance Examination(JEE Mains-2015).
     \item Selected as \textbf{KVPY} Scholar in `Kishore Vaigyanik Protsahan Yojana' by Indian Institute of Science given to top 1\%.
     \item Became a National Talent Search Examination (\textbf{NTSE}) scholar for being in top 1000 at National level in 2013.
 \end{itemize}
@@ -135,7 +141,7 @@ Year & Degree & Institute & CGPA/Percentage \\
         \item Used transfer learning in encoder by employing state of art CNN (Inception V4) to encode individual video frames.
         \item Designed encoder decoder network architecture consisting of Multilayered LSTMs to achieve this translation.
         \item Experimented with Data Augmentation, Audio Features, Attention models, Loss metrics to improve performance.
-        \item Explored its applications in areas like video surveillance and helping visually impaired.
+        \item Explored its application in areas like video surveillance and in helping visually impaired.
     \end{itemize}
 
     \item[]
@@ -143,9 +149,9 @@ Year & Degree & Institute & CGPA/Percentage \\
     \begin{itemize}
     \setlength\itemsep{0.0em}
         \item Developed a software to automatically generate captions for images.
-        \item Used a encoder decoder network similar to machine translation for generating captions.
-        \item Used Inception V4 network to extract features from images using transfer learning
-        \item Used Multilayered LSTM network to decode image embeddings into natural language sentence.
+        \item Used an encoder decoder network similar to that in machine translation for generating captions.
+        \item Used Inception V4 network to generate image embedding using transfer learning.
+        \item Used Multilayered LSTM network to decode image embedding into natural language sentence.
         \item Achieved baseline performance of paper Show and Tell by Vinyals et al.
     \end{itemize}
 
@@ -153,8 +159,8 @@ Year & Degree & Institute & CGPA/Percentage \\
     \headerrow {\textbf{Pipelined MIPS Simulator with debugger and cache simulator}}{Prof. Kolin Paul, Mar-April 2017}
     \begin{itemize}
     \setlength\itemsep{0.0em}
-        \item Developed a pipelined MIPS simulator supporting animation of instruction execution in multiple stages in C.
-        \item Simulated all stages in parallel using threads (pthreads).
+        \item Developed a pipelined MIPS simulator in C that supported animation of instructions being executed in different stages.
+        \item Simulated all pipelined stages in parallel using threads (pthreads).
         \item Designed a trace based cache simulator and debugger for the processor with various configuration options.
         \item Used SVG to show current instruction in each stage and Javascript, CSS for styling.
     \end{itemize}
@@ -162,7 +168,7 @@ Year & Degree & Institute & CGPA/Percentage \\
 \end{list}
 % \end{spacing}
 
-
+\begin{absolutelynopagebreak}
 \begin{longversion}
 \section{Other Projects}
 \begin{list} {\labelitemi}{\leftmargin=0em}
@@ -171,13 +177,25 @@ Year & Degree & Institute & CGPA/Percentage \\
 %\begin{itemize}
 
 \item[]
-\headerrow {\textbf{Multicycle ARM Processor}}{Prof. Anshul Kumar, Mar-April 2017}
+\headerrow {\textbf{Flashsubs}} {Independent Project, Mar - April 2016}
 \begin{itemize} \item[]
-Developed a Multicycle ARM procecssor in VHDL that ran on FPGA board. Modelled memory as slave and used AHB Lite bus for connection. Implemented UART interface for memory and extended the processor with 7 segment display and interrupt controller.
+Created a software for management of media library (Movies/TV Series) which intelligently fetches subtitles and renames obfuscated media files. It uses file hash to identify media in online database and uses filename for identification as last resort. It automatically downloads metadata like IMDb rating, plot, actors list etc. The link to project is \href{https://github.com/ozym4nd145/FlashSubs}{here}.
+\end{itemize}
+
+\headerrow {\textbf{\href{http://cap.rdv-iitd.com}{Rendezvous CAP Portal}}} {Independent Project, June - July 2017}
+\begin{itemize} \item[]
+Designed and developed the entire backend of Campus representative portal in NodeJS. Used Amazon DynamoDB for database and designed ingenious table structure to minimize the number of tables required. Implemented token based authentication along with OAuth Login and designed RESTful APIs for the entire competitive portal.
+\end{itemize}
+
+
+\item[]
+\headerrow {\textbf{Multicycle ARM Processor}}{Prof. Anshul Kumar, Mar - April 2017}
+\begin{itemize} \item[]
+Developed a Multicycle ARM processor in VHDL on FPGA. Modelled memory as slave and used AHB Lite bus for connection. Implemented UART for memory and extended processor with 7 segment display and interrupt controller.
 \end{itemize}
 
 \item[]
-\headerrow {\textbf{Prolog Interpreter}}{Prof. Sanjeeva Prasad, Mar-April 2017}
+\headerrow {\textbf{Prolog Interpreter}}{Prof. Sanjeeva Prasad, Mar - April 2017}
 \begin{itemize} \item[] 
 Designed a prolog interpreter written in OCaml. It used OCaml-lex for token generation and OCaml-yacc for parsing. Backtracking and rule unification were used to implement the relational backbone of the interpreter.
 \end{itemize}
@@ -185,7 +203,7 @@ Designed a prolog interpreter written in OCaml. It used OCaml-lex for token gene
 \item[]
 \headerrow{ \textbf{Krivine and SECD Machine}} {Prof. Sanjeeva Prasad, April - May 2017}
 \begin{itemize} \item[] 
-Implemented a compiler with krivine and secd machine. A Lexical Scanner converted program to tokens followed by a Recursive Descent Parser for converting the token list to an Abstract Syntax Tree (AST). The AST was type checked and a low level code was generated, which was executed by the Krivine and SECD machine. Machines also supported features like scoping,function passing,recursion.
+Implemented a compiler with krivine and secd machine in Ocaml. A Lex Scanner converted program to tokens which were converted to an Abstract Syntax Tree using Recursive Descent Parser. The AST was type checked and a low level code was generated, which was executed by the machines. Machines also supported features like scoping,recursion etc.
 \end{itemize}
 
 \item[]
@@ -194,11 +212,6 @@ Implemented a compiler with krivine and secd machine. A Lexical Scanner converte
 Designed and developed a AC Circuit solver in C which generates an SVG of input circuit and gives steady state solution of circuit. It used Lex and Yacc to parse netlist and Gaussian Elimination to solve node equations of circuit. 
 \end{itemize}
 
-\item[]
-\headerrow {\textbf{Flashsubs}} {Independent Project, Mar - April 2016}
-\begin{itemize} \item[]
-Created a software for automatic management of media library (Movies/ TV Series) which intelligently fetched of subtitles for files and auto renamed obfuscated media files. It used file hash to uniquely identify media from opensubtitles database and used filename as identifier as a last resort. It also performed automatic downloading of various metadata like IMDb rating, plot, actors list etc.
-\end{itemize}
 
 \end{list}
 %\end{itemize}
@@ -212,21 +225,16 @@ Created a software for automatic management of media library (Movies/ TV Series)
 \section{Relevant Courses}
 \begin{itemize}
 \setlength\itemsep{-1em}
-\item \textbf{Computer Science:} \\ 
+\item \textbf{Computer Science:} \hfill \textit{(*Courses currently pursuing)}\\
 Computer Vision*, Algorithm Design*, AI*, Networks*, Logic for CS*, Cryptography*, Programming Languages, Computer Architecture, Design Practices, Data Structures \& Algorithms, Discrete Mathematics, Digital Logic\\
 
-\item \textbf{Mathematics and Electrical Engineering:} \\
-Signals \& Systems, Probability \& Stochastic Processes, Calculus, Linear Algebra, Intro to Electrical Engineering.\\
+\item \textbf{Mathematics and Electrical:}
+Signals \& Systems, Prob. \& Stochastic Processes, Calculus, Linear Algebra.\\
 
-\item \textbf{Online:} \\
-Deep Learning (\href{http://www.fast.ai/}{Fast.ai}), Intro to Machine Learning (Stanford, Coursera), Intro to Computer Science (CS50, Harvard).
-
-
+\item \textbf{Online:}
+Deep Learning (\href{http://www.fast.ai/}{Fast.ai}), Intro to Machine Learning (Stanford, Coursera), Intro to CS (CS50, Harvard).
 \end{itemize}
-
-
-
-\textit{*Courses currently pursuing}
+% \textit{*Courses currently pursuing}
 \end{longversion}
 
 
@@ -248,14 +256,15 @@ Deep Learning (\href{http://www.fast.ai/}{Fast.ai}), Intro to Machine Learning (
 \begin{itemize}
     \setlength\itemsep{0em}
     \item Co-founded Development Club in IIT Delhi to spread software development culture in college.
-    \item Coordinator at Coding Club, responsible for organising all competitive coding related events at IIT Delhi.
-    \item Technical Activity Head at \href{http://rdv-iitd.com/}{Rendezvous 2017}, responsible for all the technical backend of the cultural festival.
-    \item Appointed as 3rd Year Representative of Kumaon Hostel in IIT Delhi.
-    \item Developed a chatbot named CampusBot during Microsoft Code.Fun.Do to fulfill the basic needs of college students.
+    \item Coordinator at Coding Club, responsible for organizing all competitive coding related events at IIT Delhi.
+    \item Elected as Microsoft Student Partner, responsible for representing Microsoft at IIT Delhi. 
+    \item Technical Activity Head at \href{http://rdv-iitd.com/}{Rendezvous 2017}, responsible for all the technical back-end of the cultural festival.
+    % \item Appointed as 3rd Year Representative of Kumaon Hostel at IIT Delhi.
+    % \item Developed a chat bot named CampusBot during Microsoft Code.Fun.Do to fulfill the basic needs of college students.
     % \item Won MockStock , an online trading competition , in \href{http://tryst-iitd.com/iitd}{Tryst 2017}.
      
 \end{itemize}
-
+\end{absolutelynopagebreak}
 
 
 \end{document}
