@@ -1,4 +1,5 @@
-% % (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% % (c) 2002 Matthew noedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+
 % % (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
 % % (c) 2008 Nathaniel Johnston <nathaniel@nathanieljohnston.com> http://www.nathanieljohnston.com
 % %
@@ -104,8 +105,8 @@
 \hline
 Year & Degree & Institute & CGPA/Percentage \\ 
 \hline
-2015-2019 & B.Tech in Computer Science & Indian Institute of Technology & 9.898 \\ 
-(Current) & and Engineering & Delhi & \textbf{Institute Rank 1}\\
+2015-2019 & B.Tech in Computer Science & Indian Institute of Technology & 9.885 \\ 
+(Current) & and Engineering & Delhi & \textbf{Institute Rank 2}\\
 \hline
 
 
@@ -120,7 +121,7 @@ Year & Degree & Institute & CGPA/Percentage \\
 \begin{itemize}
     \setlength\itemsep{0.0em}
     \item Secured \textbf{All India Rank 69} in Joint Entrance Exam Advanced - 2015 among 150 Thousand candidates.
-    \item \textbf{Institute Rank 1}. Consistently maintaining institute rank in top 3 among 850 students during academic years 2015-2017. IIT Delhi granted scholarship for the same.
+    \item \textbf{Institute Rank 2}. Consistently maintaining institute rank in top 3 among 850 students during academic years 2015-2018. IIT Delhi granted scholarship for the same.
     \item Selected for \textbf{ACM-ICPC 2017 and 2018} Regional Round with teams competing from all over India.
     \item Runner up in \textbf{Microsoft's Code.Fun.Do} campus wide Hackathon in 2016, 2017 and 2018.
     % \item Ranked in \textbf{Top 0.01\%} among 1.4 million candidates appearing in Joint Entrance Examination(JEE Mains-2015).
@@ -128,11 +129,47 @@ Year & Degree & Institute & CGPA/Percentage \\
     \item Became a National Talent Search Examination (\textbf{NTSE}) scholar for being in top 1000 at National level in 2013.
 \end{itemize}
 
-\section{Major Projects}
+\section{Internships \& Major Projects}
 % \begin{spacing}{1}
 \begin{list} {\labelitemi}{\leftmargin=0em}
 \setlength{\leftmargin}{0pt}
 
+    \item[]
+    \headerrow {\textbf{Summer Internship}}{Tower Research Capital, May-July 2018}
+    \begin{itemize}
+    \setlength\itemsep{0.0em}
+	\item Designed a modern Web based architecture for Order Entry service.
+	\item Created a highly available micro-service in C++ to handle low latency market orders.
+	\item Experimented with Golang to create a robust micro-service for order management and routing.
+	\item Used GRPC and Protobufs for network communication between micro-services.
+	\item Created Dyanmic UI using Javascript and employed AJAX + Websockets for client-server communication.
+    \end{itemize}
+    \item[]
+    \headerrow {\textbf{Online Coaching Backend}}{Bozobaka Pvt. Ltd., Jan-Aug 2018}
+    \begin{itemize}
+    \setlength\itemsep{0.0em}
+	\item Single handedly created the backend service for online coaching.
+	\item Used Loopback framework on NodeJS to create the REST APIs for the service.
+	\item Employed MySQL and MongoDB databases to store structured and unstructured data.
+	\item Used Redis for caching in order to make service faster and less compute intensive.
+    \end{itemize}
+    % \item[]
+    % \headerrow {\textbf{Debunking Neural Essay Scoring}}{Prof. Mausam, Mar-May 2018}
+    % \begin{itemize}
+    % \setlength\itemsep{0.0em}
+	% \item Compared performance of Neural models vs Non-Neural Models on Automated Essay Scoring.
+	% \item Designed various experiments to analyze and contrast their performance in sub-tasks of essay scoring.
+	% \item Proposed various methods to mitigate the shortcomings of neural models on these important subtasks.
+    % \end{itemize}
+    \item[]
+    \headerrow {\textbf{Real Time Video Augmentation}}{Prof. Subhashis Banerjee, Oct-Nov 2017}
+    \begin{itemize}
+    \setlength\itemsep{0.0em}
+	\item Transported a human from a live green screen video stream into a custom 3D environment.
+	\item Used techniques like Chroma Keying in YCrCb space to get a matte from the green screen video.
+	\item Unreal Engine was used to generate videos of a custom 3D environment from a moving camera.
+	\item Light mask and blending techniques were used for the keying output to get realistic results.
+    \end{itemize}
     \item[]
     \headerrow {\textbf{Automated Video Description}}{Prof. Subhashis Banerjee, May-July 2017}
     \begin{itemize}
@@ -140,29 +177,7 @@ Year & Degree & Institute & CGPA/Percentage \\
         \item Built software for generating novel description of short video clips.
         \item Used transfer learning in encoder by employing state of art CNN (Inception V4) to encode individual video frames.
         \item Designed encoder decoder network architecture consisting of Multilayered LSTMs to achieve this translation.
-        \item Experimented with Data Augmentation, Audio Features, Attention models, Loss metrics to improve performance.
-        \item Explored its application in areas like video surveillance and in helping visually impaired.
-    \end{itemize}
-
-    \item[]
-    \headerrow {\textbf{Automated Image Captioning}}{Prof. Subhashis Banerjee, Jan-April 2017}
-    \begin{itemize}
-    \setlength\itemsep{0.0em}
-        \item Developed a software to automatically generate captions for images.
-        \item Used an encoder decoder network similar to that in machine translation for generating captions.
-        \item Used Inception V4 network to generate image embedding using transfer learning.
-        \item Used Multilayered LSTM network to decode image embedding into natural language sentence.
-        \item Achieved baseline performance of paper Show and Tell by Vinyals et al.
-    \end{itemize}
-
-    \item[]
-    \headerrow {\textbf{Pipelined MIPS Simulator with debugger and cache simulator}}{Prof. Kolin Paul, Mar-April 2017}
-    \begin{itemize}
-    \setlength\itemsep{0.0em}
-        \item Developed a pipelined MIPS simulator in C that supported animation of instructions being executed in different stages.
-        \item Simulated all pipelined stages in parallel using threads (pthreads).
-        \item Designed a trace based cache simulator and debugger for the processor with various configuration options.
-        \item Used SVG to show current instruction in each stage and Javascript, CSS for styling.
+        % \item Experimented with Data Augmentation, Audio Features, Attention models, Loss metrics to improve performance.
     \end{itemize}
 
 \end{list}
@@ -176,42 +191,53 @@ Year & Degree & Institute & CGPA/Percentage \\
 % \setlength\itemsep{5em}
 %\begin{itemize}
 
-\item[]
-\headerrow {\textbf{Flashsubs}} {Independent Project, Mar - April 2016}
-\begin{itemize} \item[]
-Created a software for management of media library (Movies/TV Series) which intelligently fetches subtitles and renames obfuscated media files. It uses file hash to identify media in online database and uses filename for identification as last resort. It automatically downloads metadata like IMDb rating, plot, actors list etc. The link to project is \href{https://github.com/ozym4nd145/FlashSubs}{here}.
-\end{itemize}
-
-\headerrow {\textbf{\href{http://cap.rdv-iitd.com}{Rendezvous CAP Portal}}} {Independent Project, June - July 2017}
-\begin{itemize} \item[]
-Designed and developed the entire backend of Campus representative portal in NodeJS. Used Amazon DynamoDB for database and designed ingenious table structure to minimize the number of tables required. Implemented token based authentication along with OAuth Login and designed RESTful APIs for the entire competitive portal.
-\end{itemize}
-
+% \headerrow {\textbf{\href{http://cap.rdv-iitd.com}{Rendezvous CAP Portal}}} {Independent Project, June - July 2017}
+% \begin{itemize} \item[]
+% Designed and developed the entire backend of Campus representative portal in NodeJS. Used Amazon DynamoDB for database and designed ingenious table structure to minimize the number of tables required. Implemented token based authentication along with OAuth Login and designed RESTful APIs for the entire competitive portal.
+% \end{itemize}
 
 \item[]
-\headerrow {\textbf{Multicycle ARM Processor}}{Prof. Anshul Kumar, Mar - April 2017}
-\begin{itemize} \item[]
-Developed a Multicycle ARM processor in VHDL on FPGA. Modelled memory as slave and used AHB Lite bus for connection. Implemented UART for memory and extended processor with 7 segment display and interrupt controller.
-\end{itemize}
-
-\item[]
-\headerrow {\textbf{Prolog Interpreter}}{Prof. Sanjiva Prasad, Mar - April 2017}
+\headerrow {\textbf{Debunking Neural Essay Scoring}}{Prof. Mausam, Mar - May 2018}
 \begin{itemize} \item[] 
-Designed a prolog interpreter written in OCaml. It used OCaml-lex for token generation and OCaml-yacc for parsing. Backtracking and rule unification were used to implement the relational backbone of the interpreter.
+Analysed various Neural and Non Neural systems for automated essay scoring and designed various experiments to compare their qualitative performance. Using the insights gained from these experiments, proposed methods to improve the qualitative performance of neural models. The link to the report is \href{https://www.cse.iitd.ac.in/~cs1150262/nlp.pdf}{here}.
 \end{itemize}
+
+\item[]
+\headerrow {\textbf{\href{https://github.com/ozym4nd145/ocr_web}{Multilingual OCR Service}}}{Independent Project, Oct - Nov 2017}
+\begin{itemize} \item[] 
+Created a dockerized service for OCR of multilingual PDFs and Images. Used NodeJS and ExpressJS to create the webserver, Tesseract OCR for character recognition, Amazon S3 for remotes access of files and Amazon SES for sending notification. Whole service built as a docker container to run on a multi-node cluster.
+\end{itemize}
+
+
+\item[]
+\headerrow {\textbf{Auto Reimbursement Bot}}{Tower Hackathon Runner Up, Jun - Jun 2017}
+\begin{itemize} \item[] 
+Designed a Slack bot for automating reimbursement process in organizations. It automatically extracted fields like amount, invoice no. from bill photos. Written in python, it used ImageMagick to process images, then Tesseract OCR for character recognition and finally a fuzzy parser with custom rules to find relevant fields.
+\end{itemize}
+
+\item[]
+\headerrow {\textbf{Deployment System}}{Dev Club, July - Aug 2018}
+\begin{itemize} \item[]
+Developed an end to end Deployment system using docker-compose and docker-machine. It used Github hooks to auto build docker images and Slack hooks to deploy these images on multiple nodes. It was written in Golang and used Ansible for multi-node deployment.
+\end{itemize}
+
+% \item[]
+% \headerrow {\textbf{Flashsubs}} {Independent Project, Mar - April 2016}
+% \begin{itemize} \item[]
+% Created a software for management of media library (Movies/TV Series) which intelligently fetches subtitles and renames obfuscated media files. It uses file hash to identify media in online database and uses filename for identification as last resort. It automatically downloads metadata like IMDb rating, plot, actors list etc. The link to project is \href{https://github.com/ozym4nd145/FlashSubs}{here}.
+% \end{itemize}
+
+% \item[]
+% \headerrow {\textbf{Multicycle ARM Processor}}{Prof. Anshul Kumar, Mar - April 2017}
+% \begin{itemize} \item[]
+% Developed a Multicycle ARM processor in VHDL on FPGA. Modelled memory as slave and used AHB Lite bus for connection. Implemented UART for memory and extended processor with 7 segment display and interrupt controller.
+% \end{itemize}
 
 \item[]
 \headerrow{ \textbf{Krivine and SECD Machine}} {Prof. Sanjiva Prasad, April - May 2017}
 \begin{itemize} \item[] 
-Implemented a compiler with krivine and secd machine in Ocaml. A Lex Scanner converted program to tokens which were converted to an Abstract Syntax Tree using Recursive Descent Parser. The AST was type checked and a low level code was generated, which was executed by the machines. Machines also supported features like scoping,recursion etc.
+Implemented a compiler with Krivine and SECD machine in Ocaml. A Lex Scanner converted program to tokens which were converted to an Abstract Syntax Tree using Recursive Descent Parser. The AST was type checked and a low level code was generated, which was executed by the machines. Machines also supported features like scoping,recursion etc.
 \end{itemize}
-
-% \item[]
-% \headerrow { \textbf{AC Circuit Solver}} {Prof. Kolin Paul, Feb - Mar 2017}
-% \begin{itemize} \item[]
-% Designed and developed a AC Circuit solver in C which generates an SVG of input circuit and gives steady state solution of circuit. It used Lex and Yacc to parse netlist and Gaussian Elimination to solve node equations of circuit. 
-% \end{itemize}
-
 
 \end{list}
 %\end{itemize}
@@ -225,14 +251,11 @@ Implemented a compiler with krivine and secd machine in Ocaml. A Lex Scanner con
 \section{Relevant Courses}
 \begin{itemize}
 \setlength\itemsep{-1em}
-\item \textbf{Computer Science:} \hfill \textit{(*Courses currently pursuing)}\\
-Computer Vision*, Algorithm Design*, AI*, Networks*, Logic for CS*, Cryptography*, Programming Languages, Computer Architecture, Design Practices, Data Structures \& Algorithms, Discrete Mathematics, Digital Logic\\
+\item \textbf{Computer Science:} \hfill \\
+NLP, Computer Vision, AI, Machine Learning, Operating Systems, Computer Networks, Parallel Computing, Theory of Computation, Algorithm Design, Logic for CS, Programming Languages, Computer Architecture, Design Practices, Data Structures \& Algorithms, Discrete Mathematics, Digital Logic\\
 
 \item \textbf{Mathematics and Electrical:}
-Signals \& Systems, Prob. \& Stochastic Processes, Calculus, Linear Algebra.\\
-
-\item \textbf{Online:}
-Deep Learning (\href{http://www.fast.ai/}{Fast.ai}), Intro to Machine Learning (Stanford, Coursera), Intro to CS (CS50, Harvard).
+Linear Optimization, Signals \& Systems, Prob. \& Stochastic Processes, Calculus, Linear Algebra.\\
 \end{itemize}
 % \textit{*Courses currently pursuing}
 \end{longversion}
@@ -240,10 +263,8 @@ Deep Learning (\href{http://www.fast.ai/}{Fast.ai}), Intro to Machine Learning (
 
 \begin{longversion}
 \section{Technical Skills}\begin{itemize}
-\item \textbf{Programming Languages:}  C, \CPP, Python, Java, JavaScript, NodeJS, OCaml, VHDL, C\#, Matlab.
-\item \textbf{Frameworks:} ExpressJS, Loopback, Django, Web2Py, Bootstrap, JQuery, MongoDB, DynamoDB, Tensorflow
-
-% \item \textbf{Programming Environments:} Git, Android Studio, LaTeX, Visual Studio, Xilinx ISE Design Suite
+\item \textbf{Programming Languages:}  C, \CPP, Python, Java, JavaScript, NodeJS, Golang, OCaml, VHDL, C\#, Matlab.
+\item \textbf{Frameworks:} Docker, ExpressJS, Loopback, Django, Web2Py, Bootstrap, JQuery, MongoDB, DynamoDB, Tensorflow, PyTorch, MySQL, GRPC
 
 \end{itemize}
 
@@ -256,14 +277,9 @@ Deep Learning (\href{http://www.fast.ai/}{Fast.ai}), Intro to Machine Learning (
 \begin{itemize}
     \setlength\itemsep{0em}
     \item Co-founded \textbf{Development Club} in IIT Delhi to spread software development culture in college.
-    \item Coordinator at \textbf{Coding Club}, responsible for organizing all competitive coding related events at IIT Delhi.
     \item System Administrator in \textbf{Updaters Group}, handling the system administration work of CSE Dept. IIT Delhi.
-    \item Elected as \textbf{Microsoft Student Partner}, responsible for representing Microsoft at IIT Delhi. 
-    \item \textbf{Technical Coordinator} at \href{http://tryst-iitd.com/}{Tryst 2018}, responsible for back-end of the techincal festival.
-    % \item \textbf{Technical Activity Head} at \href{http://rdv-iitd.com/}{Rendezvous 2017}, responsible for all the technical back-end of the cultural festival.
-    % \item Appointed as 3rd Year Representative of Kumaon Hostel at IIT Delhi.
-    % \item Developed a chat bot named CampusBot during Microsoft Code.Fun.Do to fulfill the basic needs of college students.
-    % \item Won MockStock , an online trading competition , in \href{http://tryst-iitd.com/iitd}{Tryst 2017}.
+    \item Coordinator at \textbf{Coding Club}, responsible for organizing all competitive coding related events at IIT Delhi.
+    \item \textbf{Technical Coordinator} at \href{http://tryst-iitd.com/}{Tryst 2018}, responsible for back-end of the technical festival.
      
 \end{itemize}
 \end{absolutelynopagebreak}
